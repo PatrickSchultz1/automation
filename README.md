@@ -28,8 +28,13 @@ Once dependencies are installed and .env is constructed, you'll have several opt
 - npm run test-api
 - npm run test-login
 - npm run test-dashboard
-- npm run test-all 
+- npm run test 
     - test-all requires testrail credentials that aren't provided right now
+
+# TestRail integration
+**A provisioned read-only account is accesible on my TR trial instance. Credentials will be emailed**
+
+This current iteration utilizes the .env to access TestRail credentials, then junit and junitparser aggregate the xml test files for trcli (testrail cli) to automatically update test cases and test runs. Man, that's a mouthful of a sentence.. sorry. This process is made easy with one script in the package JSON. **"npm run test"**! Another convenience in running this command is its pre and post test scripts. PreTest runs resource cleanup prior to execution, while Posttest carries out the automated reporting.
 
 
 # QOL improvements noticed
@@ -100,15 +105,6 @@ Once dependencies are installed and .env is constructed, you'll have several opt
         - Example image
 ![alt text](image-1.png)
 
-- **Employee table doesn't handle row outline gracefully when broswer is resized**
-    - Exected - Employee table should resize boundary properly 
-    - Steps:
-        - Login to the application 
-        - Navigate to the dashboard
-        - Add an employee
-        - Dramatically reduce the width of the browser ~25-50%
-        - Verify the row data doesn't properly resize or wrap words
-
 - **PUT Employee allows user to update salary**
     - Expected - based on the schema payload for this endpoint, updating salary should return a 400
     - Steps:
@@ -117,9 +113,15 @@ Once dependencies are installed and .env is constructed, you'll have several opt
         - Verify the endpoint returns 200 and updates the value
 
 - **POST Employees endpoint accepts special character as names**
-    - Expected - Post Employee should return a 400
+    - Expected - Post Employee should return a 400 when special characters are used
     - Steps:
         - POST employees with firstname/lastname as special characters 
         - Verify POST employees returns a 200 
 
+- **POST Employees returns a 405 when dependents value is empty**
+    - Expected - Post Employees should return a 400 when dependents field is empty
+    - Steps:
+        - Update the POST employees payload so depedents has an empty value
+        - Execute the POST employee call 
+        - Verify the endpoint returns a 405 "Method not found"
 
