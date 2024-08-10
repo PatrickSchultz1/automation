@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="11.771" tests="20" failures="4">
+  <testsuite name="Root Suite" timestamp="2024-08-10T19:31:16" tests="0" file="cypress\e2e\paylocityAPI\employeesAPI.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Employees endpoint" timestamp="2024-08-10T19:31:16" tests="20" time="11.765" failures="4">
+    <testcase name="Employees endpoint Verify GET /employees status code - &apos;200&apos; (example #1)" time="0.849" classname="Verify GET /employees status code - &apos;200&apos; (example #1)">
+    </testcase>
+    <testcase name="Employees endpoint Verify GET /employees status code - &apos;401&apos; (example #2)" time="0.354" classname="Verify GET /employees status code - &apos;401&apos; (example #2)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;200&apos; employee details: &apos;default&apos;=&apos;default&apos; (example #1)" time="0.463" classname="POST /employees status: &apos;200&apos; employee details: &apos;default&apos;=&apos;default&apos; (example #1)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;200&apos; employee details: &apos;dependants&apos;=&apos;5&apos; (example #2)" time="0.743" classname="POST /employees status: &apos;200&apos; employee details: &apos;dependants&apos;=&apos;5&apos; (example #2)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;33&apos; (example #3)" time="0.491" classname="POST /employees status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;33&apos; (example #3)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;-1&apos; (example #4)" time="0.295" classname="POST /employees status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;-1&apos; (example #4)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;.5&apos; (example #5)" time="0.000" classname="POST /employees status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;.5&apos; (example #5)">
+      <failure message="Cannot read properties of undefined (reading &apos;id&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'id')
+    at Context.eval (cypress/Main/employeesAPI.js:53:70)]]></failure>
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;400&apos; employee details: &apos;firstname&apos;=&apos;&apos; (example #6)" time="0.412" classname="POST /employees status: &apos;400&apos; employee details: &apos;firstname&apos;=&apos;&apos; (example #6)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;400&apos; employee details: &apos;lastname&apos;=&apos;&apos; (example #7)" time="0.393" classname="POST /employees status: &apos;400&apos; employee details: &apos;lastname&apos;=&apos;&apos; (example #7)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;400&apos; employee details: &apos;lastname&apos;=&apos;??&apos; (example #8)" time="0.000" classname="POST /employees status: &apos;400&apos; employee details: &apos;lastname&apos;=&apos;??&apos; (example #8)">
+      <failure message="expected &apos;200&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityAPI/employeesAPI.js:22:22)]]></failure>
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;400&apos; employee details: &apos;firstname&apos;=&apos;??&apos; (example #9)" time="0.000" classname="POST /employees status: &apos;400&apos; employee details: &apos;firstname&apos;=&apos;??&apos; (example #9)">
+      <failure message="expected &apos;200&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityAPI/employeesAPI.js:22:22)]]></failure>
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: &apos;401&apos; employee details: &apos;default&apos;=&apos;default&apos; (example #10)" time="0.412" classname="POST /employees status: &apos;401&apos; employee details: &apos;default&apos;=&apos;default&apos; (example #10)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;200&apos; employee details: &apos;firstname&apos;=&apos;ValidTest&apos; (example #1)" time="0.500" classname="PUT /employee status: &apos;200&apos; employee details: &apos;firstname&apos;=&apos;ValidTest&apos; (example #1)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;200&apos; employee details: &apos;lastname&apos;=&apos;ValidTest&apos; (example #2)" time="0.576" classname="PUT /employee status: &apos;200&apos; employee details: &apos;lastname&apos;=&apos;ValidTest&apos; (example #2)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;200&apos; employee details: &apos;dependants&apos;=&apos;5&apos; (example #3)" time="0.576" classname="PUT /employee status: &apos;200&apos; employee details: &apos;dependants&apos;=&apos;5&apos; (example #3)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;400&apos; employee details: &apos;salary&apos;=&apos;130000&apos; (example #4)" time="0.000" classname="PUT /employee status: &apos;400&apos; employee details: &apos;salary&apos;=&apos;130000&apos; (example #4)">
+      <failure message="expected &apos;200&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityAPI/employeesAPI.js:22:22)]]></failure>
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;33&apos; (example #5)" time="0.588" classname="PUT /employee status: &apos;400&apos; employee details: &apos;dependants&apos;=&apos;33&apos; (example #5)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;400&apos; employee details: &apos;firstname&apos;=&apos;&apos; (example #6)" time="0.572" classname="PUT /employee status: &apos;400&apos; employee details: &apos;firstname&apos;=&apos;&apos; (example #6)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;400&apos; employee details: &apos;lastname&apos;=&apos;&apos; (example #7)" time="0.710" classname="PUT /employee status: &apos;400&apos; employee details: &apos;lastname&apos;=&apos;&apos; (example #7)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: &apos;401&apos; employee details: &apos;Default&apos;=&apos;Default&apos; (example #8)" time="0.550" classname="PUT /employee status: &apos;401&apos; employee details: &apos;Default&apos;=&apos;Default&apos; (example #8)">
+    </testcase>
+  </testsuite>
+</testsuites>

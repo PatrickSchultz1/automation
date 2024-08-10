@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites tests="43" failures="13" errors="0" skipped="0" time="25.297"><testsuite name="Root Suite" timestamp="2024-08-10T19:31:32" tests="0" file="cypress\e2e\paylocityUI\dashboard.feature" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="Dashboard" timestamp="2024-08-10T19:31:32" tests="19" time="12.808" failures="9" errors="0" skipped="0">
+    <testcase name="Dashboard New employee is displayed on table - 'Patrick','Schultz',dependents-'2' (example #1)" time="0.000" classname="New employee is displayed on table - 'Patrick','Schultz',dependents-'2' (example #1)">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `table[id=&quot;employeesTable&quot;] tbody tr`, but never found it." type="AssertionError">AssertionError: Timed out retrying after 4000ms: Expected to find element: `table[id="employeesTable"] tbody tr`, but never found it.
+    at Dashboard.get (cypress/Main/dashboard.js:9:38)
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:93:14)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
+    </testcase>
+    <testcase name="Dashboard New employee is displayed on table - 'John','Doe',dependents-'25' (example #2)" time="0.000" classname="New employee is displayed on table - 'John','Doe',dependents-'25' (example #2)">
+      <failure message="expected 'John' to equal 'Doe'" type="AssertionError">AssertionError: expected 'John' to equal 'Doe'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:98:28)</failure>
+    </testcase>
+    <testcase name="Dashboard Employee details are updated on the table" time="0.000" classname="Employee details are updated on the table">
+      <failure message="expected 'Patrick' to equal 'Doe'" type="AssertionError">AssertionError: expected 'Patrick' to equal 'Doe'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:98:28)</failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'123','Schultz',dependents-'2' (example #1)" time="0.000" classname="Error thrown when submitting invalid details:'123','Schultz',dependents-'2' (example #1)">
+      <failure message="expected '200' to equal '400'" type="AssertionError">AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'Patrick','123',dependents-'2' (example #2)" time="0.000" classname="Error thrown when submitting invalid details:'Patrick','123',dependents-'2' (example #2)">
+      <failure message="expected '200' to equal '400'" type="AssertionError">AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'40' (example #3)" time="2.014" classname="Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'40' (example #3)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'','Schultz',dependents-'2' (example #4)" time="1.851" classname="Error thrown when submitting invalid details:'','Schultz',dependents-'2' (example #4)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'Patrick','',dependents-'2' (example #5)" time="1.570" classname="Error thrown when submitting invalid details:'Patrick','',dependents-'2' (example #5)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'' (example #6)" time="0.000" classname="Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'' (example #6)">
+      <failure message="expected '405' to equal '400'" type="AssertionError">AssertionError: expected '405' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'?','Schultz',dependents-'2' (example #7)" time="0.000" classname="Error thrown when submitting invalid details:'?','Schultz',dependents-'2' (example #7)">
+      <failure message="expected '200' to equal '400'" type="AssertionError">AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'Patrick','!!!!!!!',dependents-'2' (example #8)" time="0.000" classname="Error thrown when submitting invalid details:'Patrick','!!!!!!!',dependents-'2' (example #8)">
+      <failure message="expected '200' to equal '400'" type="AssertionError">AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'-2' (example #9)" time="1.928" classname="Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'-2' (example #9)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'.5' (example #10)" time="0.000" classname="Error thrown when submitting invalid details:'Patrick','Schultz',dependents-'.5' (example #10)">
+      <failure message="expected '405' to equal '400'" type="AssertionError">AssertionError: expected '405' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</failure>
+    </testcase>
+    <testcase name="Dashboard Employee benefits cost is calculated correctly - dependents-'0' (example #1)" time="0.842" classname="Employee benefits cost is calculated correctly - dependents-'0' (example #1)">
+    </testcase>
+    <testcase name="Dashboard Employee benefits cost is calculated correctly - dependents-'5' (example #2)" time="0.887" classname="Employee benefits cost is calculated correctly - dependents-'5' (example #2)">
+    </testcase>
+    <testcase name="Dashboard Employee benefits cost is calculated correctly - dependents-'10' (example #3)" time="0.879" classname="Employee benefits cost is calculated correctly - dependents-'10' (example #3)">
+    </testcase>
+    <testcase name="Dashboard Employee Net Pay is calculated correctly - dependents-'0' (example #1)" time="0.909" classname="Employee Net Pay is calculated correctly - dependents-'0' (example #1)">
+    </testcase>
+    <testcase name="Dashboard Employee Net Pay is calculated correctly - dependents-'5' (example #2)" time="0.989" classname="Employee Net Pay is calculated correctly - dependents-'5' (example #2)">
+    </testcase>
+    <testcase name="Dashboard Employee Net Pay is calculated correctly - dependents-'10' (example #3)" time="0.939" classname="Employee Net Pay is calculated correctly - dependents-'10' (example #3)">
+    </testcase>
+  </testsuite>
+<testsuite name="Root Suite" timestamp="2024-08-10T19:31:16" tests="0" file="cypress\e2e\paylocityAPI\employeesAPI.feature" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="Employees endpoint" timestamp="2024-08-10T19:31:16" tests="20" time="8.484" failures="4" errors="0" skipped="0">
+    <testcase name="Employees endpoint Verify GET /employees status code - '200' (example #1)" time="0.849" classname="Verify GET /employees status code - '200' (example #1)">
+    </testcase>
+    <testcase name="Employees endpoint Verify GET /employees status code - '401' (example #2)" time="0.354" classname="Verify GET /employees status code - '401' (example #2)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '200' employee details: 'default'='default' (example #1)" time="0.463" classname="POST /employees status: '200' employee details: 'default'='default' (example #1)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '200' employee details: 'dependants'='5' (example #2)" time="0.743" classname="POST /employees status: '200' employee details: 'dependants'='5' (example #2)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '400' employee details: 'dependants'='33' (example #3)" time="0.491" classname="POST /employees status: '400' employee details: 'dependants'='33' (example #3)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '400' employee details: 'dependants'='-1' (example #4)" time="0.295" classname="POST /employees status: '400' employee details: 'dependants'='-1' (example #4)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '400' employee details: 'dependants'='.5' (example #5)" time="0.000" classname="POST /employees status: '400' employee details: 'dependants'='.5' (example #5)">
+      <failure message="Cannot read properties of undefined (reading 'id')" type="TypeError">TypeError: Cannot read properties of undefined (reading 'id')
+    at Context.eval (cypress/Main/employeesAPI.js:53:70)</failure>
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '400' employee details: 'firstname'='' (example #6)" time="0.412" classname="POST /employees status: '400' employee details: 'firstname'='' (example #6)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '400' employee details: 'lastname'='' (example #7)" time="0.393" classname="POST /employees status: '400' employee details: 'lastname'='' (example #7)">
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '400' employee details: 'lastname'='??' (example #8)" time="0.000" classname="POST /employees status: '400' employee details: 'lastname'='??' (example #8)">
+      <failure message="expected '200' to equal '400'" type="AssertionError">AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityAPI/employeesAPI.js:22:22)</failure>
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '400' employee details: 'firstname'='??' (example #9)" time="0.000" classname="POST /employees status: '400' employee details: 'firstname'='??' (example #9)">
+      <failure message="expected '200' to equal '400'" type="AssertionError">AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityAPI/employeesAPI.js:22:22)</failure>
+    </testcase>
+    <testcase name="Employees endpoint POST /employees status: '401' employee details: 'default'='default' (example #10)" time="0.412" classname="POST /employees status: '401' employee details: 'default'='default' (example #10)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '200' employee details: 'firstname'='ValidTest' (example #1)" time="0.500" classname="PUT /employee status: '200' employee details: 'firstname'='ValidTest' (example #1)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '200' employee details: 'lastname'='ValidTest' (example #2)" time="0.576" classname="PUT /employee status: '200' employee details: 'lastname'='ValidTest' (example #2)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '200' employee details: 'dependants'='5' (example #3)" time="0.576" classname="PUT /employee status: '200' employee details: 'dependants'='5' (example #3)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '400' employee details: 'salary'='130000' (example #4)" time="0.000" classname="PUT /employee status: '400' employee details: 'salary'='130000' (example #4)">
+      <failure message="expected '200' to equal '400'" type="AssertionError">AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityAPI/employeesAPI.js:22:22)</failure>
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '400' employee details: 'dependants'='33' (example #5)" time="0.588" classname="PUT /employee status: '400' employee details: 'dependants'='33' (example #5)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '400' employee details: 'firstname'='' (example #6)" time="0.572" classname="PUT /employee status: '400' employee details: 'firstname'='' (example #6)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '400' employee details: 'lastname'='' (example #7)" time="0.710" classname="PUT /employee status: '400' employee details: 'lastname'='' (example #7)">
+    </testcase>
+    <testcase name="Employees endpoint PUT /employee status: '401' employee details: 'Default'='Default' (example #8)" time="0.550" classname="PUT /employee status: '401' employee details: 'Default'='Default' (example #8)">
+    </testcase>
+  </testsuite>
+<testsuite name="Root Suite" timestamp="2024-08-10T19:32:18" tests="0" file="cypress\e2e\paylocityUI\login.feature" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="Login" timestamp="2024-08-10T19:32:18" tests="4" time="4.005" failures="0" errors="0" skipped="0">
+    <testcase name="Login accepts valid credentials" time="1.725" classname="accepts valid credentials">
+    </testcase>
+    <testcase name="Login returns 'invalid credentials' error (example #1)" time="1.098" classname="returns 'invalid credentials' error (example #1)">
+    </testcase>
+    <testcase name="Login returns 'username required' error (example #2)" time="0.554" classname="returns 'username required' error (example #2)">
+    </testcase>
+    <testcase name="Login returns 'password required' error (example #3)" time="0.628" classname="returns 'password required' error (example #3)">
+    </testcase>
+  </testsuite>
+</testsuites>

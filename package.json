@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "cypress": "^13.13.2"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "dotenv-cli": "^7.4.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e"
+  },
+  "scripts": {
+    "test-api": "npx cypress run --spec 'cypress\\e2e\\paylocityAPI\\employeesAPI.feature'",
+    "test-login": "npx cypress run --spec 'cypress\\e2e\\paylocityUI\\login.feature'",
+    "test-dashboard": "npx cypress run --spec 'cypress\\e2e\\paylocityUI\\dashboard.feature'",
+    "test-all": "npx cypress run --reporter junit --reporter-options mochaFile=reports/junit-[hash].xml || true && junitparser merge --glob \"reports/junit-*\" \"reports/junit-report.xml\"",
+    "pretest": "powershell -Command \"Remove-Item -Path './reports/junit*.xml', './e2e/screenshots/*.png' -Force -ErrorAction SilentlyContinue\" || true",
+    "posttest": "npx dotenv -- powershell -Command \"trcli -y -h $env:TESTRAIL_URL --project $env:PROJECT --username $env:USER --password $env:SECRET_KEY parse_junit --title 'Cypress Automated Test Run' -f './reports/junit-report.xml'\""
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.107" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-08-10T19:32:18" tests="0" file="cypress\e2e\paylocityUI\login.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login" timestamp="2024-08-10T19:32:18" tests="4" time="4.097" failures="0">
+    <testcase name="Login accepts valid credentials" time="1.725" classname="accepts valid credentials">
+    </testcase>
+    <testcase name="Login returns &apos;invalid credentials&apos; error (example #1)" time="1.098" classname="returns &apos;invalid credentials&apos; error (example #1)">
+    </testcase>
+    <testcase name="Login returns &apos;username required&apos; error (example #2)" time="0.554" classname="returns &apos;username required&apos; error (example #2)">
+    </testcase>
+    <testcase name="Login returns &apos;password required&apos; error (example #3)" time="0.628" classname="returns &apos;password required&apos; error (example #3)">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,149 @@
+#Potential api schema updates. Each of these would be written up as tasks to standardize the endpoints. Thelint-openapi default linter settings were used. 
+
+errors
+
+  Message :   Parameter objects must have a `description` field.
+  Path    :   paths./api/Employees/{id}.delete.parameters.0
+  Line    :   58
+
+  Message :   Parameter objects must have a `description` field.
+  Path    :   paths./api/Employees/{id}.get.parameters.0
+  Line    :   71
+
+  Message :   Path segments must follow case convention: lower_dash_case
+  Path    :   paths./api/Employees
+  Line    :   12
+
+  Message :   Path segments must follow case convention: lower_dash_case
+  Path    :   paths./api/Employees/{id}
+  Line    :   53
+
+warnings
+
+  Message :   A 200 response should include a response body. Use 204 for responses without content.
+  Path    :   paths./api/Employees.post.responses.200
+  Line    :   28
+
+  Message :   A 200 response should include a response body. Use 204 for responses without content.
+  Path    :   paths./api/Employees.get.responses.200
+  Line    :   34
+
+  Message :   A 200 response should include a response body. Use 204 for responses without content.
+  Path    :   paths./api/Employees.put.responses.200
+  Line    :   51
+
+  Message :   A 200 response should include a response body. Use 204 for responses without content.
+  Path    :   paths./api/Employees/{id}.delete.responses.200
+  Line    :   65
+
+  Message :   A 200 response should include a response body. Use 204 for responses without content.
+  Path    :   paths./api/Employees/{id}.get.responses.200
+  Line    :   78
+
+  Message :   Operations must have a non-empty `operationId`.
+  Path    :   paths./api/Employees.get.operationId
+  Line    :   30
+
+  Message :   Operations must have a non-empty `summary` field.
+  Path    :   paths./api/Employees.get.summary
+  Line    :   30
+
+  Message :   Operations must have a non-empty `operationId`.
+  Path    :   paths./api/Employees.post.operationId
+  Line    :   13
+
+  Message :   Operations must have a non-empty `summary` field.
+  Path    :   paths./api/Employees.post.summary
+  Line    :   13
+
+  Message :   Operations must have a non-empty `operationId`.
+  Path    :   paths./api/Employees.put.operationId
+  Line    :   36
+
+  Message :   Operations must have a non-empty `summary` field.
+  Path    :   paths./api/Employees.put.summary
+  Line    :   36
+
+  Message :   Operations must have a non-empty `operationId`.
+  Path    :   paths./api/Employees/{id}.get.operationId
+  Line    :   67
+
+  Message :   Operations must have a non-empty `summary` field.
+  Path    :   paths./api/Employees/{id}.get.summary
+  Line    :   67
+
+  Message :   Operations must have a non-empty `operationId`.
+  Path    :   paths./api/Employees/{id}.delete.operationId
+  Line    :   54
+
+  Message :   Operations must have a non-empty `summary` field.
+  Path    :   paths./api/Employees/{id}.delete.summary
+  Line    :   54
+
+  Message :   Common path parameters should be defined on path object
+  Path    :   paths./api/Employees/{id}.delete.parameters.0
+  Line    :   58
+
+  Message :   Common path parameters should be defined on path object
+  Path    :   paths./api/Employees/{id}.get.parameters.0
+  Line    :   71
+
+  Message :   Schema of type string should use one of the following formats: byte, binary, date, date-time, password.
+  Path    :   paths./api/Employees/{id}.delete.parameters.0.schema.type
+  Line    :   62
+
+  Message :   Schema of type string should use one of the following formats: byte, binary, date, date-time, password.
+  Path    :   paths./api/Employees/{id}.get.parameters.0.schema.type
+  Line    :   75
+
+  Message :   Schema must have a non-empty description.
+  Path    :   components.schemas.Employee
+  Line    :   82
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.partitionKey.description
+  Line    :   89
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.sortKey.description
+  Line    :   93
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.username.description
+  Line    :   97
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.id.description
+  Line    :   101
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.firstName.description
+  Line    :   104
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.lastName.description
+  Line    :   108
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.dependants.description
+  Line    :   112
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.expiration.description
+  Line    :   117
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.salary.description
+  Line    :   121
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.gross.description
+  Line    :   124
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.benefitsCost.description
+  Line    :   128
+
+  Message :   Schema properties must have a description with content in it.
+  Path    :   components.schemas.Employee.properties.net.description
+  Line    :   132

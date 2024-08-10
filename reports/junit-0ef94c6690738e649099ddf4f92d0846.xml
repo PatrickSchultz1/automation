@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="40.467" tests="19" failures="9">
+  <testsuite name="Root Suite" timestamp="2024-08-10T19:31:32" tests="0" file="cypress\e2e\paylocityUI\dashboard.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Dashboard" timestamp="2024-08-10T19:31:32" tests="19" time="40.460" failures="9">
+    <testcase name="Dashboard New employee is displayed on table - &apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #1)" time="0.000" classname="New employee is displayed on table - &apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #1)">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `table[id=&quot;employeesTable&quot;] tbody tr`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `table[id="employeesTable"] tbody tr`, but never found it.
+    at Dashboard.get (cypress/Main/dashboard.js:9:38)
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:93:14)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Dashboard New employee is displayed on table - &apos;John&apos;,&apos;Doe&apos;,dependents-&apos;25&apos; (example #2)" time="0.000" classname="New employee is displayed on table - &apos;John&apos;,&apos;Doe&apos;,dependents-&apos;25&apos; (example #2)">
+      <failure message="expected &apos;John&apos; to equal &apos;Doe&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'John' to equal 'Doe'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:98:28)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Employee details are updated on the table" time="0.000" classname="Employee details are updated on the table">
+      <failure message="expected &apos;Patrick&apos; to equal &apos;Doe&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'Patrick' to equal 'Doe'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:98:28)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;123&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #1)" time="0.000" classname="Error thrown when submitting invalid details:&apos;123&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #1)">
+      <failure message="expected &apos;200&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;123&apos;,dependents-&apos;2&apos; (example #2)" time="0.000" classname="Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;123&apos;,dependents-&apos;2&apos; (example #2)">
+      <failure message="expected &apos;200&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;40&apos; (example #3)" time="2.014" classname="Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;40&apos; (example #3)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #4)" time="1.851" classname="Error thrown when submitting invalid details:&apos;&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #4)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;&apos;,dependents-&apos;2&apos; (example #5)" time="1.570" classname="Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;&apos;,dependents-&apos;2&apos; (example #5)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;&apos; (example #6)" time="0.000" classname="Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;&apos; (example #6)">
+      <failure message="expected &apos;405&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '405' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;?&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #7)" time="0.000" classname="Error thrown when submitting invalid details:&apos;?&apos;,&apos;Schultz&apos;,dependents-&apos;2&apos; (example #7)">
+      <failure message="expected &apos;200&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;!!!!!!!&apos;,dependents-&apos;2&apos; (example #8)" time="0.000" classname="Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;!!!!!!!&apos;,dependents-&apos;2&apos; (example #8)">
+      <failure message="expected &apos;200&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '200' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;-2&apos; (example #9)" time="1.928" classname="Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;-2&apos; (example #9)">
+    </testcase>
+    <testcase name="Dashboard Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;.5&apos; (example #10)" time="0.000" classname="Error thrown when submitting invalid details:&apos;Patrick&apos;,&apos;Schultz&apos;,dependents-&apos;.5&apos; (example #10)">
+      <failure message="expected &apos;405&apos; to equal &apos;400&apos;" type="AssertionError"><![CDATA[AssertionError: expected '405' to equal '400'
+    at Context.eval (cypress/e2e/paylocityUI/dashboard.js:111:26)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Dashboard Employee benefits cost is calculated correctly - dependents-&apos;0&apos; (example #1)" time="0.842" classname="Employee benefits cost is calculated correctly - dependents-&apos;0&apos; (example #1)">
+    </testcase>
+    <testcase name="Dashboard Employee benefits cost is calculated correctly - dependents-&apos;5&apos; (example #2)" time="0.887" classname="Employee benefits cost is calculated correctly - dependents-&apos;5&apos; (example #2)">
+    </testcase>
+    <testcase name="Dashboard Employee benefits cost is calculated correctly - dependents-&apos;10&apos; (example #3)" time="0.879" classname="Employee benefits cost is calculated correctly - dependents-&apos;10&apos; (example #3)">
+    </testcase>
+    <testcase name="Dashboard Employee Net Pay is calculated correctly - dependents-&apos;0&apos; (example #1)" time="0.909" classname="Employee Net Pay is calculated correctly - dependents-&apos;0&apos; (example #1)">
+    </testcase>
+    <testcase name="Dashboard Employee Net Pay is calculated correctly - dependents-&apos;5&apos; (example #2)" time="0.989" classname="Employee Net Pay is calculated correctly - dependents-&apos;5&apos; (example #2)">
+    </testcase>
+    <testcase name="Dashboard Employee Net Pay is calculated correctly - dependents-&apos;10&apos; (example #3)" time="0.939" classname="Employee Net Pay is calculated correctly - dependents-&apos;10&apos; (example #3)">
+    </testcase>
+  </testsuite>
+</testsuites>
