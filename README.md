@@ -31,11 +31,14 @@ Once dependencies are installed and .env is constructed, you'll have several opt
 - npm run test 
     - test-all requires testrail credentials that aren't provided right now
 
+
 # TestRail integration
 **A provisioned read-only account is accesible on my TR trial instance. Credentials will be emailed**
 
 This current iteration utilizes the .env to access TestRail credentials, then junit and junitparser aggregate the xml test files for trcli (testrail cli) to automatically update test cases and test runs. Man, that's a mouthful of a sentence.. sorry. This process is made easy with one script in the package JSON. **"npm run test"**! Another convenience in running this command is its pre and post test scripts. PreTest runs resource cleanup prior to execution, while Posttest carries out the automated reporting.
 
+![alt text](image-4.png)
+![alt text](image-3.png)
 
 # QOL improvements noticed
 
@@ -111,6 +114,26 @@ This current iteration utilizes the .env to access TestRail credentials, then ju
         - Update PUT employee payload to include "salary"
         - Execute the PUT employee call
         - Verify the endpoint returns 200 and updates the value
+
+- **DELETE Employee returns a 200 when user GUID doesn't exist**
+    - Expected - DELETE Employee should return a 400 error 
+    - Steps:
+        - Execute DELETE employee using a nonexistent GUID
+        - Verify the response returns a 200 
+
+- **GET Employee returns a 200 when user GUID doesn't exist**
+    - Expected - GET Employee should return a 400 error
+    - Steps:
+        - Execute GET employee using a nonexistent GUID
+        - Verify the response returns a 200 
+
+- **Favicon throwing a 403**
+    - I find it hilarious I'm forbidden from seeing the favicon!
+    - Expected - Favicon should return a 200 and display on the tab
+    - Steps:
+        - Navigate to the login page
+        - Open the developer tools to the network tab
+        - Verify the favicon call is returning a 403
 
 - **POST Employees endpoint accepts special character as names**
     - Expected - Post Employee should return a 400 when special characters are used
