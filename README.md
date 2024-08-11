@@ -41,7 +41,7 @@ This current iteration utilizes the .env to access TestRail credentials, then ju
 ![alt text](image-4.png)
 ![alt text](image-3.png)
 
-# QOL improvements noticed
+# QOL improvements
 
 - After running the swagger.yaml through linter-openapi with default preferences, quite a few warnings and errors were thrown. These can be seen in "swagger_schema_warnings.txt". Some of these may be fines, but its worth looking at. I worked on a handful of microservices, and standardization is extremely important. 
 
