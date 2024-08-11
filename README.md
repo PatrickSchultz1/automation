@@ -11,6 +11,7 @@
 **Screenshots** directory will contain screenshots from failed tests
 
 # Setup 
+Note: Reccommend installing markdownlint extension in VS code
 
 Install latest version of **Node.js** => https://nodejs.org/en -v 20.16
 - This will include the ***npm** package manager required 
@@ -29,7 +30,7 @@ Once dependencies are installed and .env is constructed, you'll have several opt
 - npm run test-login
 - npm run test-dashboard
 - npm run test 
-    - test-all requires testrail credentials that aren't provided right now
+    - test requires testrail credentials that aren't provided right now
 
 
 # TestRail integration
